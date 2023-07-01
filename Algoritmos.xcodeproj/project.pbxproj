@@ -64,19 +64,19 @@
 			isa = PBXGroup;
 			children = (
 				9575C9DC2A505A4B00CFD309 /* Extensions */,
-				9575C9D72A4FB71300CFD309 /* Ordenations */,
+				9575C9D72A4FB71300CFD309 /* Ordenationss */,
 				9575C9D02A4FB66400CFD309 /* main.swift */,
 			);
 			path = Algoritmos;
 			sourceTree = "<group>";
 		};
-		9575C9D72A4FB71300CFD309 /* Ordenations */ = {
+		9575C9D72A4FB71300CFD309 /* Ordenationss */ = {
 			isa = PBXGroup;
 			children = (
 				9575C9DA2A50597B00CFD309 /* Ordenation.swift */,
 				9575C9D82A4FB73100CFD309 /* InsertionSort.swift */,
 			);
-			name = Ordenations;
+			name = Ordenationss;
 			path = "Ordenação";
 			sourceTree = "<group>";
 		};
