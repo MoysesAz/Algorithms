@@ -63,6 +63,7 @@
 		9575C9CF2A4FB66400CFD309 /* Algoritmos */ = {
 			isa = PBXGroup;
 			children = (
+				9575C9DF2A505C5500CFD309 /* Ordenations */,
 				9575C9DC2A505A4B00CFD309 /* Extensions */,
 				9575C9D02A4FB66400CFD309 /* main.swift */,
 			);
@@ -73,10 +74,17 @@
 			isa = PBXGroup;
 			children = (
 				9575C9DD2A505A5D00CFD309 /* [Int]+.swift */,
-				9575C9DA2A50597B00CFD309 /* Ordenation.swift */,
-				9575C9D82A4FB73100CFD309 /* InsertionSort.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9575C9DF2A505C5500CFD309 /* Ordenations */ = {
+			isa = PBXGroup;
+			children = (
+				9575C9D82A4FB73100CFD309 /* InsertionSort.swift */,
+				9575C9DA2A50597B00CFD309 /* Ordenation.swift */,
+			);
+			path = Ordenations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
