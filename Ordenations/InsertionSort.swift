@@ -13,10 +13,10 @@ extension Ordenation {
         for index in 1..<cacheList.count {
             let element = cacheList[index]
             var preIndex = index - 1
-            repeat {
+            while preIndex >= 0 && cacheList[preIndex] > element {
                 cacheList[preIndex + 1] = cacheList[preIndex]
                 preIndex -= 1
-            } while preIndex > -1 && cacheList[preIndex] > element
+            }
             cacheList[preIndex + 1] = element
         }
         return cacheList

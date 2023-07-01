@@ -8,10 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9575C9D12A4FB66400CFD309 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575C9D02A4FB66400CFD309 /* main.swift */; };
-		9575C9D92A4FB73100CFD309 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575C9D82A4FB73100CFD309 /* InsertionSort.swift */; };
-		9575C9DB2A50597B00CFD309 /* Ordenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575C9DA2A50597B00CFD309 /* Ordenation.swift */; };
 		9575C9DE2A505A5D00CFD309 /* [Int]+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575C9DD2A505A5D00CFD309 /* [Int]+.swift */; };
+		9575CA112A50919100CFD309 /* Ordenations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9575CA092A50919100CFD309 /* Ordenations.framework */; };
+		9575CA162A50919100CFD309 /* OrdenationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575CA152A50919100CFD309 /* OrdenationsTests.swift */; };
+		9575CA172A50919100CFD309 /* Ordenations.h in Headers */ = {isa = PBXBuildFile; fileRef = 9575CA0B2A50919100CFD309 /* Ordenations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9575CA1E2A50919A00CFD309 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575C9D82A4FB73100CFD309 /* InsertionSort.swift */; };
+		9575CA1F2A50919A00CFD309 /* Ordenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575C9DA2A50597B00CFD309 /* Ordenation.swift */; };
+		9575CA222A5093ED00CFD309 /* [Int]+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575C9DD2A505A5D00CFD309 /* [Int]+.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9575CA122A50919100CFD309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9575C9C52A4FB66400CFD309 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9575CA082A50919100CFD309;
+			remoteInfo = Ordenations;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		9575C9CB2A4FB66400CFD309 /* CopyFiles */ = {
@@ -31,6 +45,10 @@
 		9575C9D82A4FB73100CFD309 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		9575C9DA2A50597B00CFD309 /* Ordenation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ordenation.swift; sourceTree = "<group>"; };
 		9575C9DD2A505A5D00CFD309 /* [Int]+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "[Int]+.swift"; sourceTree = "<group>"; };
+		9575CA092A50919100CFD309 /* Ordenations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Ordenations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9575CA0B2A50919100CFD309 /* Ordenations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ordenations.h; sourceTree = "<group>"; };
+		9575CA102A50919100CFD309 /* OrdenationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrdenationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9575CA152A50919100CFD309 /* OrdenationsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdenationsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +59,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9575CA062A50919100CFD309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9575CA0D2A50919100CFD309 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9575CA112A50919100CFD309 /* Ordenations.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -48,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				9575C9CF2A4FB66400CFD309 /* Algoritmos */,
+				9575CA0A2A50919100CFD309 /* Ordenations */,
+				9575CA142A50919100CFD309 /* OrdenationsTests */,
 				9575C9CE2A4FB66400CFD309 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				9575C9CD2A4FB66400CFD309 /* Algoritmos */,
+				9575CA092A50919100CFD309 /* Ordenations.framework */,
+				9575CA102A50919100CFD309 /* OrdenationsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +100,6 @@
 		9575C9CF2A4FB66400CFD309 /* Algoritmos */ = {
 			isa = PBXGroup;
 			children = (
-				9575C9DF2A505C5500CFD309 /* Ordenations */,
-				9575C9DC2A505A4B00CFD309 /* Extensions */,
 				9575C9D02A4FB66400CFD309 /* main.swift */,
 			);
 			path = Algoritmos;
@@ -78,16 +113,37 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		9575C9DF2A505C5500CFD309 /* Ordenations */ = {
+		9575CA0A2A50919100CFD309 /* Ordenations */ = {
 			isa = PBXGroup;
 			children = (
 				9575C9D82A4FB73100CFD309 /* InsertionSort.swift */,
 				9575C9DA2A50597B00CFD309 /* Ordenation.swift */,
+				9575CA0B2A50919100CFD309 /* Ordenations.h */,
 			);
 			path = Ordenations;
 			sourceTree = "<group>";
 		};
+		9575CA142A50919100CFD309 /* OrdenationsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9575C9DC2A505A4B00CFD309 /* Extensions */,
+				9575CA152A50919100CFD309 /* OrdenationsTests.swift */,
+			);
+			path = OrdenationsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9575CA042A50919100CFD309 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9575CA172A50919100CFD309 /* Ordenations.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		9575C9CC2A4FB66400CFD309 /* Algoritmos */ = {
@@ -107,6 +163,42 @@
 			productReference = 9575C9CD2A4FB66400CFD309 /* Algoritmos */;
 			productType = "com.apple.product-type.tool";
 		};
+		9575CA082A50919100CFD309 /* Ordenations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9575CA182A50919100CFD309 /* Build configuration list for PBXNativeTarget "Ordenations" */;
+			buildPhases = (
+				9575CA042A50919100CFD309 /* Headers */,
+				9575CA052A50919100CFD309 /* Sources */,
+				9575CA062A50919100CFD309 /* Frameworks */,
+				9575CA072A50919100CFD309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ordenations;
+			productName = Ordenations;
+			productReference = 9575CA092A50919100CFD309 /* Ordenations.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9575CA0F2A50919100CFD309 /* OrdenationsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9575CA1B2A50919100CFD309 /* Build configuration list for PBXNativeTarget "OrdenationsTests" */;
+			buildPhases = (
+				9575CA0C2A50919100CFD309 /* Sources */,
+				9575CA0D2A50919100CFD309 /* Frameworks */,
+				9575CA0E2A50919100CFD309 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9575CA132A50919100CFD309 /* PBXTargetDependency */,
+			);
+			name = OrdenationsTests;
+			productName = OrdenationsTests;
+			productReference = 9575CA102A50919100CFD309 /* OrdenationsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -118,6 +210,12 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					9575C9CC2A4FB66400CFD309 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					9575CA082A50919100CFD309 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					9575CA0F2A50919100CFD309 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -136,9 +234,28 @@
 			projectRoot = "";
 			targets = (
 				9575C9CC2A4FB66400CFD309 /* Algoritmos */,
+				9575CA082A50919100CFD309 /* Ordenations */,
+				9575CA0F2A50919100CFD309 /* OrdenationsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9575CA072A50919100CFD309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9575CA0E2A50919100CFD309 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9575C9C92A4FB66400CFD309 /* Sources */ = {
@@ -147,12 +264,36 @@
 			files = (
 				9575C9D12A4FB66400CFD309 /* main.swift in Sources */,
 				9575C9DE2A505A5D00CFD309 /* [Int]+.swift in Sources */,
-				9575C9DB2A50597B00CFD309 /* Ordenation.swift in Sources */,
-				9575C9D92A4FB73100CFD309 /* InsertionSort.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9575CA052A50919100CFD309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9575CA1F2A50919A00CFD309 /* Ordenation.swift in Sources */,
+				9575CA1E2A50919A00CFD309 /* InsertionSort.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9575CA0C2A50919100CFD309 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9575CA222A5093ED00CFD309 /* [Int]+.swift in Sources */,
+				9575CA162A50919100CFD309 /* OrdenationsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9575CA132A50919100CFD309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9575CA082A50919100CFD309 /* Ordenations */;
+			targetProxy = 9575CA122A50919100CFD309 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9575C9D22A4FB66400CFD309 /* Debug */ = {
@@ -205,7 +346,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -259,7 +400,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -274,6 +415,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35GM6XG62S;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -285,7 +427,110 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35GM6XG62S;
 				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9575CA192A50919100CFD309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 35GM6XG62S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.Ordenations;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9575CA1A2A50919100CFD309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 35GM6XG62S;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.Ordenations;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9575CA1C2A50919100CFD309 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35GM6XG62S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.OrdenationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9575CA1D2A50919100CFD309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35GM6XG62S;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Academy.OrdenationsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -307,6 +552,24 @@
 			buildConfigurations = (
 				9575C9D52A4FB66400CFD309 /* Debug */,
 				9575C9D62A4FB66400CFD309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9575CA182A50919100CFD309 /* Build configuration list for PBXNativeTarget "Ordenations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9575CA192A50919100CFD309 /* Debug */,
+				9575CA1A2A50919100CFD309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9575CA1B2A50919100CFD309 /* Build configuration list for PBXNativeTarget "OrdenationsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9575CA1C2A50919100CFD309 /* Debug */,
+				9575CA1D2A50919100CFD309 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
