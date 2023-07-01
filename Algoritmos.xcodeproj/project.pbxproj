@@ -15,10 +15,19 @@
 		9575CA1E2A50919A00CFD309 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575C9D82A4FB73100CFD309 /* InsertionSort.swift */; };
 		9575CA1F2A50919A00CFD309 /* Ordenation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575C9DA2A50597B00CFD309 /* Ordenation.swift */; };
 		9575CA222A5093ED00CFD309 /* [Int]+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9575C9DD2A505A5D00CFD309 /* [Int]+.swift */; };
+		9575CA242A50A8ED00CFD309 /* Ordenations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9575CA092A50919100CFD309 /* Ordenations.framework */; };
+		9575CA252A50A8EE00CFD309 /* Ordenations.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9575CA092A50919100CFD309 /* Ordenations.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9575CA122A50919100CFD309 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9575C9C52A4FB66400CFD309 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9575CA082A50919100CFD309;
+			remoteInfo = Ordenations;
+		};
+		9575CA262A50A8EE00CFD309 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9575C9C52A4FB66400CFD309 /* Project object */;
 			proxyType = 1;
@@ -36,6 +45,17 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		9575CA282A50A8EE00CFD309 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9575CA252A50A8EE00CFD309 /* Ordenations.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9575CA242A50A8ED00CFD309 /* Ordenations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +105,7 @@
 				9575CA0A2A50919100CFD309 /* Ordenations */,
 				9575CA142A50919100CFD309 /* OrdenationsTests */,
 				9575C9CE2A4FB66400CFD309 /* Products */,
+				9575CA232A50A8ED00CFD309 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +154,13 @@
 			path = OrdenationsTests;
 			sourceTree = "<group>";
 		};
+		9575CA232A50A8ED00CFD309 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -153,10 +182,12 @@
 				9575C9C92A4FB66400CFD309 /* Sources */,
 				9575C9CA2A4FB66400CFD309 /* Frameworks */,
 				9575C9CB2A4FB66400CFD309 /* CopyFiles */,
+				9575CA282A50A8EE00CFD309 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9575CA272A50A8EE00CFD309 /* PBXTargetDependency */,
 			);
 			name = Algoritmos;
 			productName = Algoritmos;
@@ -292,6 +323,11 @@
 			isa = PBXTargetDependency;
 			target = 9575CA082A50919100CFD309 /* Ordenations */;
 			targetProxy = 9575CA122A50919100CFD309 /* PBXContainerItemProxy */;
+		};
+		9575CA272A50A8EE00CFD309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9575CA082A50919100CFD309 /* Ordenations */;
+			targetProxy = 9575CA262A50A8EE00CFD309 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -453,7 +489,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
@@ -487,7 +523,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";

@@ -14,10 +14,9 @@ extension Ordenation {
             let element = cacheList[index]
             var preIndex = index - 1
             while preIndex >= 0 && cacheList[preIndex] > element {
-                cacheList[preIndex + 1] = cacheList[preIndex]
+                (cacheList[preIndex + 1], cacheList[preIndex])  = (cacheList[preIndex], cacheList[preIndex + 1])
                 preIndex -= 1
             }
-            cacheList[preIndex + 1] = element
         }
         return cacheList
     }
